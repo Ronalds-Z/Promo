@@ -1,0 +1,166 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: $color-white;
+    z-index: 999;
+    box-shadow: 0 0 2rem 0 $color-box-shadow;
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.7875rem 0 0.4125rem;
+
+        @media(min-width:75rem) {
+            padding: 0.6875rem 0 0.3125rem;
+        }
+
+        .logo svg {
+            width: 5rem;
+
+            @media(min-width:75rem) {
+                width: 13.5rem;
+            }
+        }
+
+        .navigation-panel {
+            display: flex;
+            align-items: center;
+            gap: 1.6875rem;
+
+            @media(min-width:75rem) {
+                gap: 3rem;
+            }
+
+            svg {
+                width: 1.4375rem;
+                aspect-ratio: 1/1;
+
+                @media(min-width: 75rem) {
+                    width: 1.75rem;
+                }
+            }
+
+            .search-bar {
+                display: flex;
+
+                @media(min-width:75rem) {
+                    justify-content: center;
+                }
+
+                @media(min-width:65rem) {
+                    box-shadow: 0 0 1rem 0 $color-box-shadow;
+                    padding-left: 1rem;
+                    border-radius: 0.4375rem;
+                }
+
+                .search-submit {
+                    background: none;
+                    border: 0;
+                    max-width: 1.75rem;
+                    cursor: pointer;
+                }
+
+                .search-input {
+                    display: none;
+
+                    @media(min-width:65rem) {
+                        display: flex;
+                        border: 0;
+                        padding-left: 0.3125rem;
+                        height: 3.5rem;
+                        width: 32rem;
+                        outline: none;
+
+                        &::placeholder {
+                            opacity: 0.5;
+                            font-size: 1rem;
+                            letter-spacing: 0.10625rem;
+                            color: #616161;
+                        }
+                    }
+                }
+            }
+
+            .language-switcher {
+                display: none;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                @media(min-width:75rem) {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+        }
+
+        .burger-button {
+            background: none;
+            border: none;
+            width: 1.75rem;
+            cursor: pointer;
+
+            @media(min-width:75rem) {
+                display: none;
+            }
+        }
+    }
+
+    .header-bottom {
+        display: none;
+
+        @media(min-width:75rem) {
+            display: flex;
+            border-top: 0.0625rem solid #f2f2f2;
+            border-bottom: 0.0625rem solid #f2f2f2;
+            margin: 0 -4rem;
+        }
+
+
+        .nav-list-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+
+            .nav-list {
+                padding: 0 4rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+
+                // position: relative;
+                .nav-list-name {
+                    padding: 1rem 0;
+                    border-bottom: 0.3875rem solid transparent;
+                    transition: border-color 0.3s;
+
+                    &:hover {
+                        border-color: darkblue;
+                    }
+                }
+
+                .nav-list-item {
+                    display: none;
+                    gap: 11.375rem;
+                    position: absolute;
+                    text-align: start;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background: $color-white;
+                    padding: 2.8125rem 2.25rem;
+                    border-bottom-right-radius: 5.625rem;
+                    box-shadow: 0 0.0625rem 0.25rem 0 $color-box-shadow;
+                }
+
+                &:hover .nav-list-item {
+                    display: flex;
+
+                }
+
+            }
+        }
+    }
+}

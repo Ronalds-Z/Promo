@@ -1,0 +1,24 @@
+.collection {
+    .categories {
+        justify-content: space-between;
+
+        .category-item-wrapper {
+            .category-item {
+
+                .category-image {
+                    aspect-ratio: 192 / 250;
+                    min-width: 12rem;
+
+                    @media(min-width: 75rem) {
+                        max-width: 15rem;
+
+                    }
+                }
+
+                .category-title {
+                    padding: 2rem 0.8125rem 1.625rem 1.625rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.dishes {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    overflow-x: scroll;
+
+    .dishes-item {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+        aspect-ratio: 150/324;
+        min-width: 9.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 1.5;
+        transition: 0.3s transform, 0.3s box-shadow;
+
+        @media(min-width:75rem) {
+            max-width: 13rem;
+            font-size: 1.3rem;
+            aspect-ratio: 13/24.5;
+
+        }
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 0 1.875rem 0 rgba(0, 0, 0, .2);
+        }
+
+        .dish-image {
+            object-fit: cover;
+        }
+
+        .dish-name {
+            padding-top: 0.375rem;
+            @media(min-width: 75rem){
+                padding-top: 0;
+            }
+        }
+
+        .dish-price {
+            margin-top: auto;
+            font-size: 1rem;
+            letter-spacing: 0.0125rem;
+            text-transform: none;
+            padding-bottom: 0.6875rem;
+
+            @media(min-width:75rem) {
+                font-size: 1.1875rem;
+                padding-bottom: 1rem;
+
+            }
+
+            .price-amount {
+                font-weight: bold;
+            }
+        }
+    }
+}
