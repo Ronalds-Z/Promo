@@ -1,16 +1,19 @@
 .info-ticket-scroll-container {
     overflow-x: scroll;
+    padding-top: 1.3125rem;
+
+    @media(min-width:75rem) {
+        padding-top: 3.5rem;
+    }
 
     .info-tickets-wrapper {
         display: flex;
-        padding-top: 2rem;
         gap: 1rem;
-        padding: 0.6rem;
+        padding: 0.625rem;
         width: fit-content;
 
         @media(min-width:75rem) {
             gap: 1.1875rem;
-            padding-top: 4rem;
             justify-content: space-between;
             width: auto;
         }

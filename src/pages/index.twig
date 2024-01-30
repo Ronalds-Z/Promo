@@ -138,37 +138,45 @@
                 <div class="content-wrapper">
                     <div class="content-title">
                         <h2>trauki</h2>
-                        <a href="#" class="content-button">
-                            skatīt visu
-                        </a>
+                        <div class="button-container">
+                            <a href="#" class="content-button">
+                                skatīt visu
+                            </a>
+                        </div>
                     </div>
-                    {% include "/components/dishes.twig"%}
+                    <div class="dishes">
+                        {% include "/components/dishes.twig"%}
+                    </div>
                 </div>
                 <div class="content-wrapper">
                     <div class="content-title">
                         <h2>kolekcijas</h2>
-                        <a href="#" class="content-button">
-                            skatīt visas kolekcijas
-                        </a>
+                        <div class="button-container">
+                            <a href="#" class="content-button">
+                                skatīt visas kolekcijas
+                            </a>
+                        </div>
                     </div>
                     <div class="collection">
                         {% include "/components/collection.twig" %}
                     </div>
                 </div>
-                <div class="content-wrapper">
-                    <div class="content-title">
-                        <h2>pasākumu galerija</h2>
-                    </div>
-                    <div class="gallery">
+                <div class="gallery">
+                    <div class="content-wrapper">
+                        <div class="content-title">
+                            <h2>pasākumu galerija</h2>
+                        </div>
                         {% include "/components/gallery.twig" %}
                     </div>
                 </div>
-                <div class="content-wrapper">
-                    <div class="insights">
+                <div class="insights">
+                    <div class="content-wrapper">
                         <div class="content-title">
                             <h2>ieskaties</h2>
-                            <a href="#" class="content-button">{{ source('icons/instagramColour.svg')
-                                }} #promotraukunoma</a>
+                            <div class="button-container">
+                                <a href="#" class="content-button">{{ source('icons/instagramColour.svg')
+                                    }} #promotraukunoma</a>
+                            </div>
                         </div>
                     </div>
                 </div>

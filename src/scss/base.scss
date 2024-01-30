@@ -40,13 +40,13 @@ svg {
     margin: 0 auto;
 
     @media(min-width: 75rem) {
-        padding: 0 3rem;
-        margin: 0 11.6875rem;
+        padding: 0 14.6875rem;
+
     }
 }
 
-main .container .home-content .content-wrapper .gallery {
-    margin: 0 auto;
+.container .gallery .swiper {
+    margin: 0 -1.3125rem;
 
     @media(min-width: 75rem) {
         margin: 0 -14.6875rem;
