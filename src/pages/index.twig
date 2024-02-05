@@ -35,11 +35,23 @@
             </div>
             <nav class="header-bottom">
                 <ul class="nav-list-wrapper">
+                    <div class="mobile-nav">
+                        <a href="#" class="cart">{{ source('icons/cart.svg')}}</a>
+                        <a href="#" class="account">{{ source('icons/account.svg')}}</a>
+                        <div class="language-switcher">
+                            {{ source('icons/languageSwitch.svg') }}
+                            <p>lv</p>
+                        </div>
+                        <button class="burger-button"> {{ source('icons/close-icon.svg')}}</button>
+                    </div>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">trauki</a>
+                        <div class="nav-list-name">
+                            <a href="#">trauki</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item">
                             <li><a href="#">šķīvji</a>
-                                <ul>
+                                <ul class="nav-list-item-submenu">
                                     <li><a href="#">test</a></li>
                                     <li><a href="#">test</a></li>
                                     <li><a href="#">test</a></li>
@@ -50,45 +62,65 @@
                                 </ul>
                             </li>
                             <li><a href="#">Bļodas</a>
-                                <ul>
+                                <ul class="nav-list-item-submenu">
                                     <li><a href="#">test</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">krūzes un apakstases</a>
-                                <ul>
+                                <ul class="nav-list-item-submenu">
                                     <li><a href="#">test</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-list"><a href="#" class="nav-list-name">glāzes</a>
+
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">glāzes</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item">
                             <li>
                                 <a href="#">stikla glāzes</a>
-                                <ul>
+                                <ul class="nav-list-item-submenu">
                                     <li><a href="#">test</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">galda piederumi</a>
+                        <div class="nav-list-name">
+                            <a href="#">galda piederumi</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item"></ul>
                     </li>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">servēšanas inventārs</a>
+                        <div class="nav-list-name">
+                            <a href="#">servēšanas inventārs</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item"></ul>
                     </li>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">bārs</a>
+                        <div class="nav-list-name">
+                            <a href="#">bārs</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item"></ul>
                     </li>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">kolekcijas</a>
+                        <div class="nav-list-name">
+                            <a href="#">kolekcijas</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item"></ul>
                     </li>
                     <li class="nav-list">
-                        <a href="#" class="nav-list-name">kontakti</a>
+                        <div class="nav-list-name">
+                            <a href="#">kontakti</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
                         <ul class="nav-list-item"></ul>
                     </li>
                 </ul>
