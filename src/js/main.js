@@ -52,27 +52,26 @@ if (burgerButton) {
     });
 
 }
+const menuButtons = document.querySelectorAll('.nav-button');
+const menuTexts = document.querySelectorAll('.nav-list-item');
+
 window.addEventListener("resize", () => {
-    if (window.innerWidth > 1200) {
+    const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if (viewportWidth > 1200) {
         navMenu.classList.remove('open-nav-menu');
         header.classList.remove('blur-background');
-        menuTexts.classList.remove('open-list')
+        menuTexts.forEach((menuText) => {
+            menuText.classList.remove('open-list')
+        })
     }
 })
 
-const menuButtons = document.querySelectorAll('.nav-button');
-const menuTexts = document.querySelectorAll('.nav-list-item');
 if (menuButtons.length && menuTexts.length) {
     menuButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
             const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
             if (viewportWidth <= 1200) {
                 menuTexts[index].classList.toggle('open-list');
-                if (menuTexts[index].classList.contains('open-list')) {
-                    menuTexts[index].style.maxHeight = menuTexts[index].scrollHeight + 'px';
-                } else {
-                    menuTexts[index].style.maxHeight = 0;
-                }
             }
         });
     });
