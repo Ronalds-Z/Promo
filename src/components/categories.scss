@@ -9,7 +9,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            border-radius: 0.625rem 0.625rem 5rem;
+            border-radius: 0.625rem 0.625rem 4rem;
 
             &:hover {
                 .category-image {
@@ -26,11 +26,12 @@
                 object-fit: cover;
                 overflow: hidden;
                 transition: 0.3s transform;
-                aspect-ratio: 21.875 / 23.8125;
-                min-width: 15rem;
+                aspect-ratio: 22 / 24.5;
+                min-width: 14.6875rem;
 
                 @media(min-width: 75rem) {
-                    max-width: 21.75rem;
+                    max-width: 17.375rem;
+                    aspect-ratio: 22 / 24;
                 }
             }
 
@@ -46,8 +47,7 @@
                 letter-spacing: 0.025rem;
 
                 @media(min-width: 75rem) {
-                    padding: 1.6875rem 0.8125rem;
-                    font-size: 1.25rem;
+                    padding: 1.3125rem 0.6125rem;
                 }
             }
         }

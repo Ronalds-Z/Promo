@@ -1,15 +1,16 @@
 .info-ticket-scroll-container {
     overflow-x: scroll;
-    padding-top: 1.3125rem;
+    padding-top: 1.625rem;
+    padding-left: 0.125rem;
 
     @media(min-width:75rem) {
-        padding-top: 3.5rem;
+        padding-top: 3rem;
     }
 
     .info-tickets-wrapper {
         display: flex;
         gap: 1rem;
-        padding: 0.625rem;
+        padding: 0.125rem;
         width: fit-content;
 
         @media(min-width:75rem) {
@@ -19,16 +20,16 @@
         }
 
         .info-ticket {
-            padding: 0 0 0.625rem 1.25rem;
+            padding: 0 0 0.3125rem 1rem;
             background-color: #ffffff;
             box-shadow: 0 0 0.6rem 0 rgba(54, 40, 40, 0.3);
-            border-radius: 0.625rem 0.625rem 5.5rem;
-            width: 13.75rem;
+            border-radius: 0.625rem 0.625rem 4.8rem;
+            width: 13.5rem;
             transition: 0.3s all;
 
             @media(min-width:75rem) {
-                width: 21.75rem;
-                padding-bottom: 1.75rem;
+                width: 17.5rem;
+                padding-bottom: 1.3125rem;
             }
 
             &:hover {
@@ -40,14 +41,14 @@
                 display: flex;
                 font-size: 0.875rem;
                 text-transform: uppercase;
-                letter-spacing: 0.00625rem;
-                padding: 0.875rem 0 0;
-                gap: 0.6875rem;
+                letter-spacing: 0.0325rem;
+                padding: 1rem 0 0;
+                gap: 0.6rem;
                 margin: 0;
 
                 @media(min-width:75rem) {
-                    padding: 1rem 0;
-                    font-size: 1.3rem;
+                    padding-top: 1rem;
+                    font-size: 1.0625rem;
                 }
 
                 svg {
@@ -62,14 +63,14 @@
 
             .info-ticket-text {
                 display: flex;
-                letter-spacing: 0.09375rem;
-                font-size: 0.625rem;
-                line-height: 1.7;
+                font-size: 10px;
+                line-height: 2;
+                letter-spacing: 1.68px;
                 padding-right: 0.875rem;
 
                 @media(min-width: 75rem) {
-                    line-height: 1.6;
-                    font-size: 1rem;
+                    font-size: 0.8125rem;
+                    line-height: 1.5;
                 }
             }
         }
