@@ -53,8 +53,19 @@ if (burgerButton) {
             header.classList.toggle('blur-background');
         });
     });
-
 }
+const main = document.querySelector('.main')
+const searchMenu = document.querySelector('.search-bar')
+const searchMenuButton = document.querySelector('.search-menu-button')
+if (searchMenuButton) {
+    searchMenuButton.addEventListener('click', () => {
+        searchMenu.classList.toggle('open-search-menu')
+        main.classList.toggle('top-shift')
+    })
+}
+
+
+
 const menuButtons = document.querySelectorAll('.nav-button');
 const menuTexts = document.querySelectorAll('.nav-list-item');
 const menuTextList = document.querySelector('.nav-list-item li')
@@ -71,7 +82,7 @@ window.addEventListener("resize", () => {
 
 if (menuTexts) {
     menuButtons.forEach((button, index) => {
-        if (menuTexts[index].querySelectorAll('li').length > 0) {
+        if (menuTexts[index].querySelectorAll('li').length) {
             button.style.display = 'flex';
             button.addEventListener('click', () => {
                 if (viewportWidth <= 1200) {
