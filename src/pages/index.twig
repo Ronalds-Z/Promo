@@ -19,12 +19,14 @@
                 </a>
                 <div class="navigation-panel">
                     <button class="search-menu-button">{{source('icons/searchIcon.svg')}}</button>
-                    <form action="search" method="get" class="search-bar">
-                        <button type="submit" class="search-submit">
-                            {{source('icons/searchIcon.svg')}}
-                        </button>
-                        <input type="text" class="search-input" placeholder="Meklēt ...">
-                    </form>
+                    <div class="search-bar-wrapper">
+                        <form action="search" method="get" class="search-bar">
+                            <button type="submit" class="search-submit">
+                                {{source('icons/searchIcon.svg')}}
+                            </button>
+                            <input type="text" class="search-input" placeholder="Meklēt ...">
+                        </form>
+                    </div>
                     <a href="#" class="cart">{{ source('icons/cart.svg')}}</a>
                     <a href="src\pages\my-account.twig" class="account">{{ source('icons/account.svg')}}</a>
                     <div class="language-switcher">

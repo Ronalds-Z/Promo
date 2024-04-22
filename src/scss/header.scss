@@ -60,60 +60,68 @@
                 }
             }
 
-            .search-bar {
+            .search-bar-wrapper {
                 display: none;
-                position: absolute;
-                box-shadow: 0 0 0.8125rem 0 $color-box-shadow;
-                border-radius: 0.4375rem;
                 top: 100%;
-                min-width: 17.5rem;
+                left: 0;
+                padding: 0.3125rem 1rem 0 1rem;
                 background-color: $color-white;
-
-                @media(min-width:75rem) {
-                    justify-content: center;
-                }
-
-                @media(min-width:65rem) {
-                    display: flex;
-                    position: static;
-                }
+                justify-content: center;
+                width: 100%;
 
                 &.open-search-menu {
                     display: flex;
+                    position: absolute;
                 }
 
-                .search-submit {
-                    background: none;
-                    border: 0;
-                    cursor: pointer;
-                    padding-left: 1rem;
-
-                    svg {
-                        width: 1rem;
-                    }
-                }
-
-                .search-input {
+                .search-bar {
                     display: flex;
-                    border: 0;
-                    padding-left: 0.25rem;
-                    max-width: 28.75rem;
+                    box-shadow: 0 0 0.8125rem 0 $color-box-shadow;
+                    border-radius: 0.4375rem;
+                    background-color: $color-white;
                     height: 2.8125rem;
+                    width: 100%;
+                    max-width: 28.75rem;
 
-                    @media (min-width:65rem) {
-                        width: 25.25rem;
+                    @media(min-width:75rem) {
+                        justify-content: center;
                     }
 
-                    &::placeholder {
-                        opacity: 0.5;
-                        font-size: 0.8125rem;
-                        letter-spacing: 0.10625rem;
-                        color: #616161;
+                    @media(min-width:65rem) {
+                        display: flex;
+                        position: static;
+                    }
 
+                    .search-submit {
+                        background: none;
+                        border: 0;
+                        cursor: pointer;
+                        padding-left: 1rem;
+
+                        svg {
+                            width: 1rem;
+                        }
+                    }
+
+                    .search-input {
+                        display: flex;
+                        border: 0;
+                        padding-left: 0.25rem;
+
+                        @media (min-width:65rem) {
+                            width: 25.25rem;
+                        }
+
+                        &::placeholder {
+                            opacity: 0.5;
+                            font-size: 0.8125rem;
+                            letter-spacing: 0.10625rem;
+                            color: #616161;
+
+                        }
                     }
                 }
             }
-
         }
 
         .language-switcher {

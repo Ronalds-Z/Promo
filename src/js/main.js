@@ -55,7 +55,7 @@ if (burgerButton) {
     });
 }
 const main = document.querySelector('.main')
-const searchMenu = document.querySelector('.search-bar')
+const searchMenu = document.querySelector('.search-bar-wrapper')
 const searchMenuButton = document.querySelector('.search-menu-button')
 if (searchMenuButton) {
     searchMenuButton.addEventListener('click', () => {
@@ -64,11 +64,8 @@ if (searchMenuButton) {
     })
 }
 
-
-
 const menuButtons = document.querySelectorAll('.nav-button');
 const menuTexts = document.querySelectorAll('.nav-list-item');
-const menuTextList = document.querySelector('.nav-list-item li')
 
 window.addEventListener("resize", () => {
     if (viewportWidth > 1200) {
