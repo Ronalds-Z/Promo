@@ -1,0 +1,23 @@
+{
+  "name": "promo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5",
+    "swiper": "^11.0.5",
+    "vite": "^5.2.10"
+  },
+  "devDependencies": {
+    "@vituum/vite-plugin-twig": "^1.1.0",
+    "vituum": "^1.1.0"
+  }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo trauku noma</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.twig" class="logo">
+                    {{ source('icons/logo.svg') }}
+                </a>
+                <div class="navigation-panel">
+                    <button class="search-menu-button">{{source('icons/searchIcon.svg')}}</button>
+                    <form action="search" method="get" class="search-bar">
+                        <button type="submit" class="search-submit">
+                            {{source('icons/searchIcon.svg')}}
+                        </button>
+                        <input type="text" class="search-input" placeholder="Meklēt ...">
+                    </form>
+                    <a href="#" class="cart">{{ source('icons/cart.svg')}}</a>
+                    <a href="src\pages\my-account.twig" class="account">{{ source('icons/account.svg')}}</a>
+                    <div class="language-switcher">
+                        {{ source('icons/languageSwitch.svg') }}
+                        <p>lv</p>
+                    </div>
+                </div>
+                <button class="burger-button">{{ source('icons/burger.svg') }}</button>
+            </div>
+            <nav class="header-bottom">
+                <ul class="nav-list-wrapper">
+                    <div class="mobile-nav">
+                        <a href="#" class="cart">{{ source('icons/cart.svg')}}</a>
+                        <a href="src\pages\my-account.twig" class="account">{{ source('icons/account.svg')}}</a>
+                        <div class="language-switcher">
+                            {{ source('icons/languageSwitch.svg') }}
+                            <p>LV</p>
+                        </div>
+                        <button class="burger-button"> {{ source('icons/close-icon.svg')}}</button>
+                    </div>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">trauki</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item">
+                            <li><a href="#">šķīvji</a>
+                                <ul class="nav-list-item-submenu">
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                    <li><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bļodas</a>
+                                <ul class="nav-list-item-submenu">
+                                    <li><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">krūzes un apakstases</a>
+                                <ul class="nav-list-item-submenu">
+                                    <li><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">glāzes</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item">
+                            <li>
+                                <a href="#">stikla glāzes</a>
+                                <ul class="nav-list-item-submenu">
+                                    <li><a href="#">test</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">galda piederumi</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item"></ul>
+                    </li>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">servēšanas inventārs</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item"></ul>
+                    </li>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">bārs</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item"></ul>
+                    </li>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">kolekcijas</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item"></ul>
+                    </li>
+                    <li class="nav-list">
+                        <div class="nav-list-name">
+                            <a href="#">kontakti</a>
+                            <button class="nav-button">{{source ('icons/chevronDown.svg')}}</button>
+                        </div>
+                        <ul class="nav-list-item"></ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="login-wrapper">
+                <h2>Pieslēgties</h2>
+                <form action="#" class="login" method="POST">
+                    <input type="email" name="login-email" class="login-email" placeholder="E-pasta adrese">
+                    <input type="password" name="login-password" class="login-password" placeholder="Parole">
+                    <button type="submit" name="login-btn" class="login-btn">ielogoties</button>
+                    <a href="#" class="lost-password">Aizmirsi paroli?</a>
+                    <p>Konta izveide iespējama, veicot pirmo pasūtījumu.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="subscripton-wrapper">
+                    <span class="footer-categories">pieteikties jaunumiem</span>
+                    <form action="#" class="subscription" method="POST">
+                        <label for="email">Ievadiet Jūsu e-pastu</label>
+                        <div class="sub-input-wrapper">
+                            <input type="email" name="sub-email" class="sub-email">
+                            <button type="submit" name="sub-btn" class="sub-btn">{{ source('icons/forwardArrow.svg') }}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="socials">
+                    <span class="footer-categories">sociālie mediji</span>
+                    <div class="social-links">
+                        <a href="#">{{ source('icons/facebook.svg') }}</a>
+                        <a href="#">{{ source('icons/instagram.svg') }}</a>
+                        <a href="#">{{ source('icons/youtube.svg') }}</a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <span class="footer-categories">kontakti</span>
+                    <a href="mailto:info@promotraukunoma.lv">info@promotraukunoma.lv</a>
+                    <a href="tel:+1234567890">+1234567890</a>
+                </div>
+            </div>
+            <ul class="footer-bottom">
+                <li> <a href="#">par mums</a> </li>
+                <li> <a href="#">lietošanas noteikumi</a> </li>
+                <li> <a href="#">privātums</a> </li>
+                <li> <a href="#">kontakti</a> </li>
+                <li> <a href="#">piegāde un norēķini</a> </li>
+                <div class="socials-mobile">
+                    <span class="footer-categories">sociālie mediji</span>
+                    <a href="#">{{ source('icons/facebook.svg') }}</a>
+                    <a href="#">{{ source('icons/instagram.svg') }}</a>
+                    <a href="#">{{ source('icons/youtube.svg') }}</a>
+                </div>
+            </ul>
+            <span class="footer-copyright">Visas tiesības aizsargātas © SIA Sanitex, 2019</span>
+        </div>
+    </footer>
+    <script src="/src/js/main.js" type="module"></script>
+</body>
+
+</html>

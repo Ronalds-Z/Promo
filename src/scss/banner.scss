@@ -1,0 +1,22 @@
+.banner {
+    display: none;
+
+    @media(min-width:29.25rem) {
+        display: flex;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner.webp);
+        background-size: cover;
+        aspect-ratio: 1440 / 490;
+        background-repeat: no-repeat;
+        color: $color-white;
+        align-items: center;
+        margin: 0 -8.75rem;
+        padding: 1.375rem 8.75rem 0;
+
+        h1 {
+            font-size: 3.75rem;
+            line-height: 0.8125;
+            letter-spacing: -0.125rem;
+            font-weight: 700;
+        }
+    }
+}
