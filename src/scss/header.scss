@@ -39,7 +39,6 @@
             align-items: center;
             justify-content: center;
             gap: 1.25rem;
-            padding: 0 1rem;
 
             @media(min-width:75rem) {
                 gap: 2.375rem;
@@ -79,14 +78,17 @@
                 &.open-search-menu {
                     display: flex;
                     position: absolute;
+                    padding-bottom: 0.25rem;
 
-                    @media(min-width: 75rem) {
+                    @media(min-width: 62rem) {
                         position: static;
+                        top: 0;
                     }
                 }
 
                 .search-bar {
                     display: flex;
+                    position: relative;
                     box-shadow: 0 0 0.8125rem 0 $color-box-shadow;
                     border-radius: 0.4375rem;
                     background-color: $color-white;
@@ -110,6 +112,14 @@
                         border: 0;
                         padding-left: 0.25rem;
 
+                        &:focus {
+                            outline: none;
+
+                            &+.search-input-subtext {
+                                display: flex;
+                            }
+                        }
+
                         @media (min-width:65rem) {
                             width: 25.25rem;
                         }
@@ -119,8 +129,20 @@
                             font-size: 0.8125rem;
                             letter-spacing: 0.10625rem;
                             color: #616161;
-
                         }
+                    }
+
+                    .search-input-subtext {
+                        display: none;
+                        position: absolute;
+                        padding: 0.3125rem 0.3125rem 1rem 0.3125rem;
+                        font-size: 0.875em;
+                        letter-spacing: 0.00625rem;
+                        top: 100%;
+                        width: 100%;
+                        background: $color-white;
+                        box-shadow: 0 0 0.25rem 0 $color-box-shadow;
+                        border-radius: 0 0 0.4375rem 0.4375rem;
                     }
                 }
             }
